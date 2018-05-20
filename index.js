@@ -7,15 +7,11 @@ app.get('/', function (req, res) {
     res.render("index");
 })
 
-app.post('/students', function (req, res) {
-
-    studentName = res.get("studentName");
-
-    console.log(studentName);
+app.post('/students/:studentName', function (req, res) {
 
     res.render("students",
         {
-            studentName: studentName
+            studentName: req.params.studentName
         });
 })
 
