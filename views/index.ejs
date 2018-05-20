@@ -1,16 +1,16 @@
 <%include header.ejs%>
 
 <script>
-function changeUrl()
-{
-    document.studentNameForm.action+=document.studentNameForm.studentName.value;
-}
+    function changeUrl()
+    {
+        document.studentNameForm.action += document.studentNameForm.studentName.value;
+    }
 
 </script>
 
 <form action="/students/" onsubmit="return changeUrl();" method="post" name="studentNameForm">
-Students Name: <input type ="text" name="studentName" value="Name">
-<input type ="submit">
+    Student's Name: <input type ="text" name="studentName" value="Name">
+    <input type ="submit">
 </form>
 
 <%include footer.ejs%>
