@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
     res.render("index");
 })
 
-app.post('/students/:studentName', function (req, res) {
+app.all('/students/:studentName', function (req, res) {
 
     res.render("students",
         {
