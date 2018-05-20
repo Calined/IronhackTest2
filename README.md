@@ -9,8 +9,8 @@ A simple website in Express.js with 2 different pages:
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+1. Clone this into a directory
+2. open a command prompt
+3. change directory to the directory ```cd C:\YourDirectory```
+4. start nodemon ```nodemon```
+5. navigate your browser to "http://localhost:3000/"
