@@ -7,8 +7,16 @@ app.get('/', function (req, res) {
     res.render("index");
 })
 
-app.get('/students/', function (req, res) {
-    res.render("students");
+app.post('/students', function (req, res) {
+
+    studentName = res.get("studentName");
+
+    console.log(studentName);
+
+    res.render("students",
+        {
+            studentName: studentName
+        });
 })
 
 app.listen(3000, function () {

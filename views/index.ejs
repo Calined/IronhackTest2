@@ -1,7 +1,15 @@
 <%include header.ejs%>
 
-<form>
-Students Name: <input type ="text" name="studentName">
+<script>
+function changeUrl()
+{
+    document.studentNameForm.action+=document.studentNameForm.studentName.value;
+}
+
+</script>
+
+<form action="/students/" onsubmit="return changeUrl();" method="post" name="studentNameForm">
+Students Name: <input type ="text" name="studentName" value="Name">
 <input type ="submit">
 </form>
 
